@@ -120,3 +120,16 @@ SELECT channel,
 FROM marketing
 GROUP BY channel
 ORDER BY roi DESC;
+
+# task Kreativität
+Креативеа задача
+SELECT c.region,
+       c.country,
+       COUNT(o.order_id) AS orders_count,
+       ROUND(SUM(o.net_amount), 2) AS total_revenue,
+       ROUND(AVG(o.net_amount), 2) AS avg_order_value,
+       ROUND(100.0 * SUM(o.is_returned) / COUNT(o.order_id), 2) AS return_rate_pct
+FROM orders o
+JOIN customers c ON o.customer_id = c.customer_id
+GROUP BY c.region, c.country
+ORDER BY c.region, total_revenue DESC;
