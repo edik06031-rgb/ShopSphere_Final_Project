@@ -53,15 +53,22 @@ Evaluation of the new checkout process:
 	•	Separate analysis for new and returning customers.
 	•	Identification of Simpson’s paradox, where the overall improvement of Variant B masks opposite effects within customer segments.
 	•	Business interpretation and recommendations for management.
+
 Dashboard
 Tableau Public: (Insert the public dashboard link after publishing.)
 Dashboard screenshots are available in the tableau/ folder.
 Key Findings
+
 	•	Paid Search receives approximately 45% of the total marketing budget, yet delivers the lowest ROI (1.0) and the lowest customer LTV ($648) among all acquisition channels. Influencer Marketing and Organic Search outperform Paid Search on both metrics.
+	
 	•	Electronics generates approximately 60% of total company revenue, but also has the lowest profit margin (12%) and the highest return rate (16%). This is a classic example of the "high-volume illusion." In contrast, Beauty produces relatively low revenue but achieves a 55% profit margin with a very low return rate, making it a "hidden gem."
+	
 	•	The top 5% of customers (150 out of 3,000) generate approximately 35% of total revenue. Customer concentration is significant but does not follow the traditional 80/20 Pareto principle. In this dataset, approximately 36–40% of customers generate 80% of revenue.
+	
 	•	The checkout A/B test reveals Simpson’s paradox. Overall, Variant B appears slightly better (+2% average order value). However, the segmented analysis shows a strong positive effect for new customers (+22.8%) and a negative effect for returning customers (-3.2%). Therefore, Variant B should be deployed selectively rather than universally.
+	
 Recommendations
+
 	•	Reallocate 15–20 percentage points of the marketing budget from Paid Search to Influencer Marketing and Email Marketing, while retaining Paid Search primarily for retargeting campaigns and seasonal peaks (November–December).
 	•	Increase investment in the Beauty category as an undervalued high-margin segment, while reviewing the Electronics strategy by investigating return reasons and optimizing the product assortment.
 	•	Replace broad discount campaigns with a loyalty program focused on the top 5% of customers and the broader high-value customer segment.
