@@ -70,15 +70,24 @@ Key Findings
 Recommendations
 
 	•	Reallocate 15–20 percentage points of the marketing budget from Paid Search to Influencer Marketing and Email Marketing, while retaining Paid Search primarily for retargeting campaigns and seasonal peaks (November–December).
+	
 	•	Increase investment in the Beauty category as an undervalued high-margin segment, while reviewing the Electronics strategy by investigating return reasons and optimizing the product assortment.
+	
 	•	Replace broad discount campaigns with a loyalty program focused on the top 5% of customers and the broader high-value customer segment.
+	
 	•	Deploy the new checkout (Variant B) only for new customers, while retaining the existing version for returning customers until the cause of the negative effect is identified.
+	
 Repository Structure
+
 data/       Original CSV datasets (customers, products, orders, order_items, marketing)
+
 sql/        SQL queries and exported CSV files for Tableau
+
 tableau/    Dashboard and visualization screenshots
+
 report/     SQL explanations, answers to the 13 business questions,
             step-by-step Tableau guide
+			
 README.md
 Reproducing the Project
 	1	Import the five CSV files into SQLite (for example, using sqliteonline.com) while preserving the relationships via customer_id, order_id, and product_id.
