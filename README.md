@@ -3,12 +3,19 @@
 ShopSphere Global Marketplace Analysis
 
 A complete analytics workflow for the ShopSphere online marketplace: from raw data to an executive dashboard and statistical analysis of an A/B experiment. Tools used: SQL (SQLite), Tableau Public, and statistical reasoning (Simpson’s paradox).
+
 Data
+
 	•	Source: educational dataset ShopSphere: Global Marketplace Analytics (final project for a Data Analytics course).
+	
 	•	Five CSV tables covering the years 2022–2024: customers (3,000), products (250), orders (~12,300), order_items (~26,000), and marketing (216).
+	
 	•	Products belong to seven categories (Electronics, Clothing, Beauty, Home & Kitchen, Sports, Books, Toys) across five global regions (North America, Europe, Southeast Asia, Latin America, Middle East).
+	
 	•	The database was built from CSV files using SQLite (sqliteonline.com or a local SQLite installation). Tables are linked via customer_id, order_id, and product_id.
+	
 Project Objective
+
 Conduct a complete analytical assessment for ShopSphere management to evaluate marketing channel performance, identify the most valuable customers, measure the true profitability of product categories (beyond revenue alone), analyze regional trends, and evaluate the results of a checkout A/B experiment. All findings are supported by SQL analysis and an executive Tableau dashboard.
 
 Project Steps
@@ -89,6 +96,7 @@ report/     SQL explanations, answers to the 13 business questions,
             step-by-step Tableau guide
 			
 README.md
+
 Reproducing the Project
 	1	Import the five CSV files into SQLite (for example, using sqliteonline.com) while preserving the relationships via customer_id, order_id, and product_id.
 	2	Execute the SQL queries from sql/queries.sql (Block 1) and export the results as CSV files.
