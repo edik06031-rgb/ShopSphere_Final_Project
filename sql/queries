@@ -133,3 +133,34 @@ FROM orders o
 JOIN customers c ON o.customer_id = c.customer_id
 GROUP BY c.region, c.country
 ORDER BY c.region, total_revenue DESC;
+
+# Pareto
+
+WITH customer_revenue AS (
+    SELECT
+        customer_id,
+        SUM(net_amount) AS revenue
+    FROM orders
+    GROUP BY customer_id
+),
+customer_groups AS (
+    SELECT
+        customer_id,
+        revenue,
+        NTILE(20) OVER (ORDER BY revenue DESC) AS customer_group
+    FROM customer_revenue
+),
+group_revenue AS (
+    SELECT
+        customer_group,
+        customer_group * 5 AS customer_share,
+        SUM(revenue) AS group_revenue
+    FROM customer_groups
+    GROUP BY customer_group
+)
+SELECT
+    customer_group,
+    customer_share,
+    group_revenue
+FROM group_revenue
+ORDER BY customer_group;
