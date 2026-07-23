@@ -70,7 +70,7 @@ Repository Structure
 data/       Original CSV datasets (customers, products, orders, order_items, marketing)
 sql/        SQL queries and exported CSV files for Tableau
 tableau/    Dashboard and visualization screenshots
-docs/       SQL explanations, answers to the 13 business questions,
+report/     SQL explanations, answers to the 13 business questions,
             step-by-step Tableau guide
 README.md
 Reproducing the Project
